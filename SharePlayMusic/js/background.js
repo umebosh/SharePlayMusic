@@ -1,7 +1,10 @@
+//開発中は以下のコードのコメントアウトを解除すると区別しやすくなる
+//chrome.browserAction.setBadgeText({text:"dev"});
+
 var tabtitle;
 var baseUrl = "https://twitter.com/intent/tweet";
 var arturl = "";
-var hashtags = "めうぷれ";
+var hashtags = "ぷれみゅ";
 
 //右クリックした時にcontentScriptから飛んできたタイトル情報を受け取ってtitleに格納
 chrome.runtime.onMessage.addListener(
@@ -29,3 +32,10 @@ chrome.contextMenus.create({title: "tweet", onclick: tweet}, function(){
     //alert("コンテキストメニュー登録完了");
 });
 
+var getTags = function(){
+    return hashtags;
+}
+
+var updateTags = function (tags) {
+    hashtags = tags;
+}

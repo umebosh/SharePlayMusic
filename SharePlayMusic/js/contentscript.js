@@ -32,13 +32,3 @@ function  getTitle(){
 //右クリックした時にgetTitleが呼ばれてbackgroundに情報を飛ばす
 window.addEventListener('contextmenu', getTitle, false);
 
-//function getinfo(){
-//    var album = document.getElementsByClassName("player-album");
-//    var artist = document.getElementsByClassName("player-artist");
-//    var title = document.getElementById("currently-playing-title");
-//    var albumart = document.getElementById("playerBarArt");
-//    window.console.log(album);
-//    window.console.log(artist);
-//    window.console.log(title);
-//    window.console.log(albumart);
-//}
