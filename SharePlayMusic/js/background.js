@@ -1,5 +1,5 @@
 //開発中は以下のコードのコメントアウトを解除すると区別しやすくなる
-//chrome.browserAction.setBadgeText({text:"dev"});
+chrome.browserAction.setBadgeText({text:"dev"});
 
 var tabtitle;
 var baseUrl = "https://twitter.com/intent/tweet";
