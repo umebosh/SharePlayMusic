@@ -4,4 +4,7 @@ $(function(){
     $('#update').click(function(){
         BG.updateTags( $('#tags').val() );
     });
+    $('#tweet').click(function(){
+        BG.tweet();
+    });
 });

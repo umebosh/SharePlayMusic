@@ -23,9 +23,9 @@ chrome.runtime.onMessage.addListener(
 function tweet(){
     //alert("in background, tweet()");
     text = tabtitle;
-    window.console.log("in background:"+tabtitle);
+    window.console.log("in background:" + tabtitle);
     //console.log("in background:"+ arturl);
-    window.open(baseUrl + "?&text=" + tabtitle + "&hashtags=" + hashtags);
+    window.open(baseUrl + "?&text=" + encodeURI(tabtitle) + "&hashtags=" + hashtags);
 }
 
 chrome.contextMenus.create({title: "tweet", onclick: tweet}, function(){

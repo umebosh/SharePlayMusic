@@ -1,6 +1,24 @@
 <script src="../js/jquery-2.2.0.min.js"></script>
 <script src="../js/popup.js"></script>
+<style>
+  .row {
+    display: flex;
+    margin: 5px;
+  }
+  .row>* {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  #tweet {
+    width: 100%;
+  }
+</style>
 <div>
+  <div class="row">
     <input type="text" id="tags">
     <input type="button" id="update" value="Set"/>
+  </div>
+  <div class="row">
+    <input type="button" id="tweet" value="Tweet"/>
+  </div>
 </div>
