@@ -1,8 +1,8 @@
 $(function () {
   var BG = chrome.extension.getBackgroundPage();
-  $('#tags').val(BG.getTags());
+  $('#format').val(BG.getFormat());
   $('#update').click(function () {
-    BG.updateTags($('#tags').val());
+    BG.updateFormat($('#format').val());
   });
   $('#tweet').click(function () {
     BG.tweet();
