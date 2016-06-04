@@ -1,6 +1,41 @@
 <script src="../js/jquery-2.2.0.min.js"></script>
 <script src="../js/popup.js"></script>
-<div>
-    <input type="text" id="tags">
+<meta charset="UTF-8">
+<style>
+  .wrapper {
+    width: 20em;
+  }
+  .row {
+    display: flex;
+    margin: 5px;
+  }
+  .row>* {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  #format {
+    width: 80%;
+  }
+  #update {
+    height: 4em;
+    line-height: 4em;
+  }
+  #tweet {
+    width: 100%;
+    height: 4em;
+    line-height: 4em;
+  }
+</style>
+<div class="wrapper">
+  <div class="row">
+    <textarea type="text" wrap="hard" rows="3" id="format"></textarea>
     <input type="button" id="update" value="Set"/>
+  </div>
+  <div class="row">
+    {title} 曲名, {artist} アーティスト名
+  </div>
+  <hr>
+  <div class="row">
+    <input type="button" id="tweet" value="Tweet"/>
+  </div>
 </div>
